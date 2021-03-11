@@ -4,10 +4,14 @@ import axios from "axios";
 
 export default function ScoresBoard(){
     const [scores, setScores] = useState({});
-    axios.get("http://localhost:8080/score").then((resp)=>{
+    
+    const players = axios.get("http://localhost:8080/score").then((resp)=>{
+            console.log("Scores: ",resp.data)
             setScores(resp.data)
             console.log("useState: ", scores)
         })
+        
+    console.log("Scores: ", players.data);
     console.log("Scores? ", scores);
     const renderScores = (player,index) => {
         return (
