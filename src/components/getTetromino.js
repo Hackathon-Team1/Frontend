@@ -1,5 +1,3 @@
-import react from 'React';
-
 export const tetrominos = {
     L: {
         shape: [
@@ -7,14 +5,14 @@ export const tetrominos = {
             [0, 'L', 0],
             [0, 'L', 'L']
         ],
-        color: 'yellow'
+        color: '#ed8e00'
     },
     O: {
         shape: [
             ['O', 'O'],
             ['O', 'O'],
         ],
-        color: 'pink'
+        color: 'yellow'
     },
     T: {
         shape: [
@@ -22,7 +20,7 @@ export const tetrominos = {
             [0, 'T', 0],
             [0, 0, 0]
         ],
-        color: 'blue'
+        color: '#d240ff'
     },
     S: {
         shape: [
@@ -30,7 +28,7 @@ export const tetrominos = {
             ['S', 'S', 0],
             [0, 0, 0]
         ],
-        color: 'green'
+        color: '#03b800'
     },
     I: {
         shape: [
@@ -39,7 +37,7 @@ export const tetrominos = {
             [0, 'I', 0, 0],
             [0, 'I', 0, 0]
         ],
-        color: 'red'
+        color: '#52f6ff'
     },
     Z: {
         shape: [
@@ -47,7 +45,7 @@ export const tetrominos = {
             [0, 'Z', 'Z'],
             [0, 0, 0]
         ],
-        color: 'purple'
+        color: '#e60000'
     },
     J: {
         shape: [
@@ -55,14 +53,13 @@ export const tetrominos = {
             [0, 'J', 0],
             ['J', 'J', 0]
         ],
-        color: 'orange'
+        color: '#001ced'
     }
 }
 
-export function generateNumber() {
+export function generateRandom() {
     //generate numbers from 0-6
     const tetro = 'LOTSIZJ';
     const temp = Math.floor(Math.random() * 7);
     return tetrominos[tetro.charAt(temp)];
-
 }

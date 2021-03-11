@@ -2,8 +2,8 @@ import React from 'react';
 
 function Cell(props) {
     return (
-        <div style={{color: props.color, width: '1%', height: '1%'}}></div>
-    )
+        <td style={{width: 20, height: 20, backgroundColor: props.color}}></td>
+    );
 }
 
 export default Cell;
