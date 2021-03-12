@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+
 }
 
 .App-logo {
@@ -38,8 +39,8 @@
 }
 
 .cell {
-  padding: 10;
-  border: 1;
-  width: '10%';
-  height: '10%';
+    padding: 10;
+    border: 1;
+    width: '10%';
+    height: '10%';
 }

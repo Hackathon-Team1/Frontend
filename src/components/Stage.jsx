@@ -4,7 +4,7 @@ import { tetrominos } from './getTetromino'
 
 function Stage(props) {
     return (
-        <table style={{borderSpacing: 0}}>
+        <table style={{borderSpacing: 1, borderColor: '#595959'}}>
 				{props.board.map(row=>{
 					return <tr>{row.map(item=>{
 						if(item){

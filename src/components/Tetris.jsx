@@ -34,10 +34,11 @@ function Tetris() {
 	];
 	const [board, setBoard] = useState(initialBoard);
     return (
-        <div style={{display: 'flex', flexDirection: 'row'}}>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent:'center', alignSelf: 'center', backgroundColor: '#969696', height: '100%', paddingTop: '13.5%', paddingBottom: '13.5%'}}>
             <Stage board={board}/>
-            <div style={{flexDirection: 'column'}}>
+            <div style={{flexDirection: 'column', paddingLeft: '3%', paddingTop: '5%'}}>
                 <Display text='Score'/>
+                <Display text='0'/>
 				<StartBtn/>
             </div>
         </div>
