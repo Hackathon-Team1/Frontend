@@ -13,11 +13,11 @@ import ScoresBoard from './components/ScoresBoard/ScoresBoard';
 function App() {
   return (
     <div className="App">
-      <Tetris/>
-
       <Router>
           <Switch>
+              <Route exact path="/" component = {Tetris}></Route>
               <Route exact path="/scores" component = {ScoresBoard}></Route>
+              <Route path="/" render={() => <div>404 NOT FOUND :)</div>} />
           </Switch>
       </Router>
     </div>
