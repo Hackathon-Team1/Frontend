@@ -25,18 +25,21 @@ export default function ScoresBoard(){
         )
     }
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                {scores.map(renderScores)}
-            </tbody>
+        <div>
+            <h1>Scores Board</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id = "t01">
+                    {scores.map(renderScores)}
+                </tbody>
 
-            
-        </table>
+                
+            </table>
+        </div>
     )
 }
